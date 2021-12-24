@@ -1,0 +1,86 @@
+@import '../../app.scss';
+@import '../../grid.scss';
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+
+  margin-top: 30px;
+}
+
+.MuiDataGrid-columnHeaderTitleContainer {
+  justify-content: center;
+}
+
+.MuiDataGrid-cell {
+  text-align: center !important;
+}
+
+.MuiDataGrid-actionsCell {
+  grid-gap: 0px !important;
+}
+
+.status.negative {
+  background-color: #d47483;
+  font-weight: 600;
+}
+
+.status.positive {
+  background-color: rgba(157, 255, 118, 0.49);
+  font-weight: 600;
+}
+
+ul.MuiDataGrid-menuList > li.MuiMenuItem-root.MuiButtonBase-root:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+
+  padding: 6px 16px;
+  box-sizing: border-box;
+  width: 100px;
+}
+
+ul.MuiDataGrid-menuList > li.MuiMenuItem-root.MuiButtonBase-root:nth-child(2),
+ul.MuiDataGrid-menuList > li.MuiMenuItem-root.MuiButtonBase-root:nth-child(3) {
+  display: none;
+}
+
+.MuiDataGrid-columnHeader > .MuiDataGrid-columnHeaderDraggableContainer {
+  position: relative;
+}
+
+.MuiDataGrid-columnHeaderDraggableContainer
+  > .MuiDataGrid-menuIcon
+  > button.MuiDataGrid-menuIconButton {
+  position: absolute;
+  right: -5px;
+}
+
+// responsive tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+  .container-manage {
+    padding: 30px 19px;
+    min-width: 768px;
+    // height: 100vh;
+
+    & > .first {
+      row-gap: 16px;
+    }
+
+    .second {
+      padding: 16px 0;
+    }
+  }
+}
+
+// >= tablet <= pc low resolution
+@media (min-width: 1024px) and (max-width: 1239px) {
+}
+
+// responsive mobile
+@media (max-width: 739px) {
+}
+
+/* > PC medium resolution  */
+@media (min-width: 1113px) {
+}

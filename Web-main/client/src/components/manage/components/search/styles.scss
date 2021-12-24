@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.search-manage {
+  display: flex;
+  height: 36px;
+
+  border: 2px solid #1976d2;
+  border-radius: 4px;
+}
+
+.search-manage .input-manage {
+  background-color: #fff;
+  border: 0;
+  font-size: 15px;
+  padding: 12px 8px;
+
+  height: 100%;
+  width: 100%;
+  border-radius: 0 4px 4px 0;
+}
+
+.search-button {
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+
+  width: 36px;
+  cursor: auto;
+
+  padding-left: 8px;
+  border-radius: 4px 0 0 4px;
+
+  & > .MuiSvgIcon-root {
+    height: 100%;
+  }
+}
+
+.search-button:focus,
+.input-manage:focus {
+  outline: none;
+}

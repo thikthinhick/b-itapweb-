@@ -1,0 +1,118 @@
+@import '../../app.scss';
+@import '../../grid.scss';
+
+.infoText {
+  color: red;
+}
+
+.container-manage {
+  padding: 40px;
+  background-color: #f5f7ff;
+}
+
+.actionButton {
+  .MuiButton-root.MuiButton-contained,
+  .MuiButton-root.MuiButton-outlined {
+    width: 100%;
+  }
+}
+
+.col {
+  .MuiPaper-root {
+    .MuiTablePagination-root {
+      border-radius: 4px 4px 0 0;
+    }
+  }
+}
+
+.table-manage {
+  // .MuiTableCell-root.MuiTableCell-head,
+  .MuiTableCell-root.MuiTableCell-body {
+    text-align: center;
+  }
+  .MuiTableCell-root.row-right {
+    text-align: right;
+  }
+
+  .last-column {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+
+.container-table,
+.table-manage {
+  overflow-x: auto;
+}
+
+.table-manage {
+  border-top: 1px solid #e0e0e0;
+}
+
+// responsive tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+  .container-manage {
+    padding: 30px 19px;
+
+    & > .first {
+      row-gap: 16px;
+    }
+
+    .second {
+      padding: 16px 0;
+    }
+  }
+}
+
+// >= tablet <= pc low resolution
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .container-manage {
+    height: 100vh;
+
+    & > .first {
+      row-gap: 16px;
+    }
+
+    .second {
+      padding: 16px 0;
+    }
+  }
+}
+
+// responsive mobile
+@media (max-width: 739px) {
+  .container-manage {
+    padding: 20px;
+    height: 198vh;
+
+    & > .first {
+      margin-bottom: 10px;
+      row-gap: 10px;
+    }
+
+    & > .second {
+      margin-bottom: 10px;
+    }
+
+    .table-manage .MuiTableCell-root.MuiTableCell-body,
+    .MuiTableCell-root.MuiTableCell-head {
+      min-width: 122px;
+      padding: 8px;
+    }
+  }
+}
+
+/* > PC medium resolution  */
+@media (min-width: 1113px) {
+  .container-manage {
+    & > .first {
+      justify-content: space-between;
+    }
+
+    .second {
+      padding: 16px 0;
+    }
+  }
+}

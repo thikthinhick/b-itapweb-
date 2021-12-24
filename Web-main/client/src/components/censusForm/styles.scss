@@ -1,0 +1,83 @@
+.wrapper-census {
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+
+  margin: 30px 0;
+
+  form {
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  h3 {
+    text-align: center;
+    margin: 0;
+    color: #4b49ac;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .line {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .MuiFormControl-root.MuiTextField-root,
+  .MuiFormControl-root.select-religion,
+  .MuiAutocomplete-root.select-ethnic,
+  .MuiFormControl-root.select-level,
+  .MuiAutocomplete-root.select-career,
+  .MuiFormControl-root.select-gender {
+    flex: 0.22;
+  }
+
+  .line.three > .select-address {
+    flex: 0.22;
+  }
+
+  .button {
+    background-color: #1976d2;
+    color: white;
+    padding: 16px 20px;
+    width: 30%;
+    margin: 30px auto;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+    border-radius: 4px;
+    border: transparent;
+
+    & > p {
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    &:hover {
+      background-color: #1565c0;
+    }
+  }
+
+  .button:active {
+    transform: scale(0.98);
+  }
+}

@@ -1,0 +1,85 @@
+@import '../../app.scss';
+@import '../../grid.scss';
+
+.container-all-citizen {
+  background-color: #f5f7ff;
+  padding: 0 40px 40px 40px;
+  display: flex;
+
+  .col > .MuiFormControl-root {
+    margin: 0;
+    width: 100%;
+
+    .MuiListItemText-root {
+      margin: 0;
+    }
+  }
+
+  .row.first {
+    justify-content: space-between;
+    padding: 16px;
+    row-gap: 16px;
+
+    .col > .MuiPaper-root {
+      width: 100%;
+      border: 2px solid #1976d2;
+      border-radius: 4px;
+      box-shadow: none;
+    }
+  }
+
+  .row.table-container {
+    .col {
+      .MuiTableContainer-root .MuiTable-root {
+        border-top: 1px solid #e0e0e0;
+
+        .MuiTableCell-root {
+          padding: 9px;
+          min-width: 114px;
+          font-size: 12px;
+        }
+
+        .MuiTableRow-head {
+          .MuiTableCell-root {
+            .MuiTableSortLabel-root {
+              margin-left: 13px;
+            }
+
+            .MuiSvgIcon-root {
+              width: 20px;
+              height: 20px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .paginations---table-pagination---41TU- .paginations---table-pagination-block---Cx6IH {
+    margin: 0;
+    padding-left: 8px;
+  }
+}
+
+// responsive tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+  .container-all-citizen {
+    height: 100vh;
+  }
+}
+
+// >= tablet <= pc low resolution
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .container-all-citizen {
+    height: 100vh;
+  }
+}
+
+// responsive mobile
+@media (max-width: 739px) {
+}
+
+/* > PC medium resolution  */
+@media (min-width: 1113px) {
+}

@@ -1,0 +1,198 @@
+@import '../../grid.scss';
+
+.logo-and-name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  & > .MuiTypography-root.MuiTypography-h6 {
+    flex: 0;
+  }
+}
+
+.MuiAppBar-root.MuiAppBar-positionFixed {
+  box-shadow: 0px 5px 21px -5px #cdd1e1;
+}
+
+.MuiToolbar-root {
+  background-color: white;
+  position: fixed;
+  color: #4b49ac;
+}
+
+// .MuiToolbar-root.MuiToolbar-gutters {
+//   padding: 0;
+// }
+
+.logo-header {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#toggle-button {
+  margin-right: 16px;
+}
+
+// .MuiIconButton-root.MuiIconButton-colorInherit {
+//   margin-right: 20px;
+// }
+
+.menu-container {
+  width: 100%;
+  background-color: white;
+  height: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: #4b49ac;
+}
+
+.MuiListItemIcon-root.icon {
+  min-width: 36px;
+  color: #4b49ac;
+}
+
+.link.active {
+  display: block;
+  color: white;
+  background-color: #4b49ac;
+}
+
+.link.active .MuiListItemIcon-root.icon {
+  color: white;
+}
+
+span.MuiTypography-displayBlock {
+  font-weight: 500;
+}
+
+.MuiButtonBase-root.accountIcon {
+  justify-items: flex-end;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.MuiMenuItem-root.menuItem {
+  font-size: 12px;
+}
+
+.MuiMenuItem-root.menuItem:hover {
+  color: #4b49ac;
+}
+
+// css cho Login
+
+.container-login {
+  height: 100vh;
+  background: #f3f4f6;
+  padding: 80px 0;
+}
+
+.img-login {
+  width: 100%;
+  margin: 0;
+}
+
+i.title-login {
+  font-family: Nunito, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  color: #666;
+  font-size: 44px;
+  font-weight: 600;
+
+}
+
+.login-input {
+  color: black;
+  margin: 40px 0;
+  background-color: white;
+
+  padding: 20px 30px;
+  border-radius: 10px;
+
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+    var(--tw-shadow);
+
+  form.login-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.login-form {
+  .MuiFormControl-root.MuiTextField-root {
+    margin: 10px 0 15px 0;
+  }
+
+  .MuiFormControl-root {
+    margin: 15px 0;
+  }
+
+  .MuiButton-root.MuiButton-contained {
+    align-self: flex-end;
+    width: 33%;
+    margin-top: 10px;
+  }
+}
+
+.container-change-pass {
+  padding: 20px 16px 30px 16px;
+
+  .MuiDialogContent-root {
+    padding: 0 24px 16px 24px;
+  }
+
+  h3 {
+    text-align: center;
+    color: #4b49ac;
+  }
+}
+
+// responsive tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+  // login
+  i.title-login {
+    font-size: 30px;
+  }
+
+  .login-form {
+    .MuiButton-root.MuiButton-contained {
+      width: 40%;
+    }
+  }
+}
+
+// >= tablet <= pc low resolution
+@media (min-width: 1024px) and (max-width: 1239px) {
+  i.title-login {
+    font-size: 30px;
+  }
+}
+
+// responsive mobile
+@media (max-width: 739px) {
+  // home-page
+  .logo-and-name {
+    justify-content: center;
+  }
+
+  .appbar > .MuiDrawer-paper.MuiDrawer-paperAnchorLeft {
+    width: 100vw;
+  }
+
+  // login
+  i.title-login {
+    font-size: 26px;
+  }
+
+  .login-form {
+    .MuiButton-root.MuiButton-contained {
+      width: 40%;
+    }
+  }
+}
